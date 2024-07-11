@@ -21,7 +21,7 @@ const attempt = 4;
 
 const bodyArr = []
 const svgFile = document.querySelector("#hang-svg").addEventListener("load", function(){
-    const doc = this.getSVGDocument();
+    const doc = this.getSVGDocument(); //found "this" on stackoverflow - understod what it means
     console.log(doc);
     const scaffold = doc.querySelector("#scaffold"); 
     const arms = doc.querySelector("#arms");
