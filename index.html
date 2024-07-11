@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+    </header>
+    <section class="img-hangman">
+      <div class="insert-section">
+        <label for="imput-form" class="input-label">Insert a character</label>
+        <div class="command">
+          <input type="text" class="char-input" id="imput-form">
+          <button class="send-char">OK</button>
+        </div>
+        <div class="response-section">
+          <img src="images/punto.png" alt="response" class="response-img">
+        </div>
+      </div>
+      <div class="hang-container">
+        <object id="hang-svg" data="images/hangman.svg" type="image/svg+xml" class="hang-image"></object>
+      </div>
+    </section>
+    <section class="word-hangman">
+      <p class="wrong-right" id="wr-label">Wrong inserted chars</p>
+      <p class="wrong-char"></p>
+      <p class="wrong-right" id="word-str">Word</p>
+      <p class="word">Bella</p>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
