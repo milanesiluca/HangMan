@@ -4,7 +4,26 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
 }
+
+.tool-bar{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blueviolet;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.tool-btn{
+    background-color:gold;
+    color: blueviolet;
+    width: 150px;
+    height: 40px;
+}
+
 
 .img-hangman{
     display: flex;
@@ -77,6 +96,7 @@ body{
     margin-top: 10px;
     width: 874px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .wrong-right{
@@ -93,17 +113,4 @@ body{
 .wrong-char{
     text-transform: uppercase;
     font-size: x-large;
-}
-
-.hang-container {
-    z-index: 1;
-}
-
-.cover {
-    background-color: blue;
-    display: flex;
-    width: 100px;
-    height: 200px;
-    z-index: 1;
-    position: relative;
 }

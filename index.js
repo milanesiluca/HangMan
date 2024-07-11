@@ -37,8 +37,6 @@ const svgFile = document.querySelector("#hang-svg").addEventListener("load", fun
     bodyArr.push(legs)
 });
 
-
-
 /**
  * right word and right characters array manager
  */
