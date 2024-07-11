@@ -8,6 +8,8 @@ const wrongLabel = document.querySelector("#wr-label")
 const okBtn = document.querySelector(".send-char");
 const inputTxtField = document.querySelector(".char-input")
 const hangImage = document.querySelector(".hang-image")
+const restartBtn = document.querySelector("#restart");
+const resetBtn = document.querySelector("#reset");
 
 const wrongCharsList = [];
 const attempt = 4;
@@ -162,8 +164,17 @@ okBtn.addEventListener("click", (event) =>{
         okBtn.setAttribute("disabled", "true");
         inputTxtField.blur();
     }
-
-      
-    
 });
 
+/**
+ * toolbar buttons manager
+ */
+
+restartBtn.addEventListener("click", () => {
+    location.reload();
+});
+
+resetBtn.addEventListener("click", () => {
+    rightWordToGuess.innerText = chosenWord.toUpperCase();
+    inputTxtField.blur();
+});
