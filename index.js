@@ -13,7 +13,7 @@ const resetBtn = document.querySelector("#reset");
 
 const wrongCharsList = [];
 const attempt = 4;
-
+inputTxtField.focus();
 
 /**
  * image svg manipolation
